@@ -1,4 +1,4 @@
-# start
+# start IOS
 iOS starter project
 
 cd Project directory
