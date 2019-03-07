@@ -3,11 +3,11 @@
 //  newproj
 //
 //  Created by Utsav Patel on 28/1/19.
-//  Copyright © 2019 erbittuu. All rights reserved.
+//  Copyright © 2019 Solution Analysts. All rights reserved.
 //
 
 //Server URLS and Other Configuration Keys
-bundle_id           = com.erbittuu.beta
+bundle_id           = com.sa-ios.beta
 app_name            = beta-newproj
 info                = beta_build
 server_url          = www.betaenv.com

@@ -3,11 +3,11 @@
 //  newproj
 //
 //  Created by Utsav Patel on 28/1/19.
-//  Copyright © 2019 erbittuu. All rights reserved.
+//  Copyright © 2019 Solution Analysts. All rights reserved.
 //
 
 //Server URLS and Other Configuration Keys
-bundle_id           = com.erbittuu.dev
+bundle_id           = com.sa-ios.dev
 app_name            = dev-newproj
 info                = development_build
 server_url          = www.developmentenv.com
