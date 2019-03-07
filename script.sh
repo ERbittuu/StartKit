@@ -55,13 +55,15 @@ mv "$OLDNAME" "$NEWNAME"
 mv "${OLDNAME}.xcodeproj" "${NEWNAME}.xcodeproj"
 
 # Rename the shared scheme
-mv "${NEWNAME}.xcodeproj/xcshareddata/xcschemes/${OLDNAME}.xcscheme" "${NEWNAME}.xcodeproj/xcshareddata/xcschemes/${NEWNAME}.xcscheme"
+# Not needed for Now
+#mv "${NEWNAME}.xcodeproj/xcshareddata/xcschemes/${OLDNAME}.xcscheme" "${NEWNAME}.xcodeproj/xcshareddata/xcschemes/${NEWNAME}.xcscheme"
 
 # Rename the shared scheme for swift
-mv "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${OLDNAME}.xcscheme" "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${NEWNAME}.xcscheme"
+# Not needed for Now
+#mv "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${OLDNAME}.xcscheme" "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${NEWNAME}.xcscheme"
 
 # Rename the 'OLDNAME-Bridging-Header' file for swift
-#mv "${NEWNAME}/${OLDNAME}-Bridging-Header.h" "${NEWNAME}/${NEWNAME}-Bridging-Header.h"
+mv "${NEWNAME}/config/${OLDNAME}-Bridging-Header.h" "${NEWNAME}/config/${NEWNAME}-Bridging-Header.h"
 
 # Rename the 'OLDNAME.xcdatamodeld' file for coreData
 #mv "${NEWNAME}/${OLDNAME}.xcdatamodeld" "${NEWNAME}/${NEWNAME}.xcdatamodeld"
@@ -74,5 +76,5 @@ mv "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${OLDNAME}.xcsc
 find . -type f -print0 | xargs -0 sed -i '' "s/${OLDNAME}/${NEWNAME}/g"
 echo "Operation completed."
 
-echo "Opening directory..."
+echo "Opening project directory..."
 open .

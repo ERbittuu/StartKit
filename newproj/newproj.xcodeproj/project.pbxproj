@@ -15,6 +15,7 @@
 		2DBD84972231266700A5B3A2 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD84962231266700A5B3A2 /* ProfileController.swift */; };
 		2DBD849A2231313B00A5B3A2 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD84992231313B00A5B3A2 /* Defaults.swift */; };
 		2DBD849C2231314300A5B3A2 /* AppDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD849B2231314300A5B3A2 /* AppDefault.swift */; };
+		2DBD84A722313B4000A5B3A2 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD84A622313B4000A5B3A2 /* MyClass.m */; };
 		6AF8D0121FBF631C00C18FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8D0111FBF631C00C18FD1 /* AppDelegate.swift */; };
 		6AF8D0141FBF631C00C18FD1 /* HomeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8D0131FBF631C00C18FD1 /* HomeTabController.swift */; };
 		6AF8D0171FBF631D00C18FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF8D0151FBF631D00C18FD1 /* Main.storyboard */; };
@@ -32,6 +33,9 @@
 		2DBD84962231266700A5B3A2 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		2DBD84992231313B00A5B3A2 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		2DBD849B2231314300A5B3A2 /* AppDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefault.swift; sourceTree = "<group>"; };
+		2DBD84A022313AEA00A5B3A2 /* newproj-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "newproj-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DBD84A522313B4000A5B3A2 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		2DBD84A622313B4000A5B3A2 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 		6AF8D00E1FBF631C00C18FD1 /* newproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF8D0111FBF631C00C18FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AF8D0131FBF631C00C18FD1 /* HomeTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		2D38385E2200450500886A76 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2DBD84A422313B2800A5B3A2 /* objc */,
 				2DBD84982231312700A5B3A2 /* Defaults */,
 				2DBD848F22311A6800A5B3A2 /* Extentions */,
 				2D3838612200453B00886A76 /* Storyboards */,
@@ -81,6 +86,7 @@
 		2D3838602200451500886A76 /* config */ = {
 			isa = PBXGroup;
 			children = (
+				2DBD84A022313AEA00A5B3A2 /* newproj-Bridging-Header.h */,
 				6AF8D0411FBF771A00C18FD1 /* Info.plist */,
 				6AF8D0371FBF73BB00C18FD1 /* Development.xcconfig */,
 				6AF8D0391FBF73D100C18FD1 /* Production.xcconfig */,
@@ -161,6 +167,15 @@
 				2DBD84962231266700A5B3A2 /* ProfileController.swift */,
 			);
 			path = Tabs;
+			sourceTree = "<group>";
+		};
+		2DBD84A422313B2800A5B3A2 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				2DBD84A522313B4000A5B3A2 /* MyClass.h */,
+				2DBD84A622313B4000A5B3A2 /* MyClass.m */,
+			);
+			path = objc;
 			sourceTree = "<group>";
 		};
 		6AF8D0051FBF631C00C18FD1 = {
@@ -291,6 +306,7 @@
 				6AF8D04A1FC0329300C18FD1 /* Environment.swift in Sources */,
 				6AF8D0121FBF631C00C18FD1 /* AppDelegate.swift in Sources */,
 				2DBD84972231266700A5B3A2 /* ProfileController.swift in Sources */,
+				2DBD84A722313B4000A5B3A2 /* MyClass.m in Sources */,
 				2DBD84952231264500A5B3A2 /* DashboardContoller.swift in Sources */,
 				2DBD849A2231313B00A5B3A2 /* Defaults.swift in Sources */,
 				2DBD849122311A7600A5B3A2 /* UIStoryboard+UIViewController.swift in Sources */,
@@ -386,6 +402,7 @@
 			baseConfigurationReference = 6AF8D0371FBF73BB00C18FD1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,6 +411,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +479,7 @@
 			baseConfigurationReference = 6AF8D0371FBF73BB00C18FD1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -538,6 +559,7 @@
 			baseConfigurationReference = 6AF8D0391FBF73D100C18FD1 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,6 +568,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -610,6 +634,7 @@
 			baseConfigurationReference = 6AF8D0391FBF73D100C18FD1 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -618,6 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,6 +714,7 @@
 			baseConfigurationReference = 6AF8D03A1FBF73DC00C18FD1 /* UAT.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -696,6 +723,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -760,6 +789,7 @@
 			baseConfigurationReference = 6AF8D03A1FBF73DC00C18FD1 /* UAT.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -768,6 +798,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -838,6 +869,7 @@
 			baseConfigurationReference = 6AF8D03B1FBF73EB00C18FD1 /* QA.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -846,6 +878,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -910,6 +944,7 @@
 			baseConfigurationReference = 6AF8D03B1FBF73EB00C18FD1 /* QA.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -918,6 +953,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -988,6 +1024,7 @@
 			baseConfigurationReference = 6AF8D03F1FBF740E00C18FD1 /* Beta.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -996,6 +1033,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1060,6 +1099,7 @@
 			baseConfigurationReference = 6AF8D03F1FBF740E00C18FD1 /* Beta.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${icon_name}";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = newproj/config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1068,6 +1108,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "${bundle_id}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproj/config/newproj-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

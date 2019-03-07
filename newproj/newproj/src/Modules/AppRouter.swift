@@ -34,6 +34,7 @@ class AppRouter {
     func startApp() {
         // Print Environment
         Environment.printEnv()
+        MyClass.init().test()
         let isLogin = !user.value.isEmpty
         if isLogin {
             openHome()
