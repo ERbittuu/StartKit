@@ -78,3 +78,5 @@ echo "Operation completed."
 
 echo "Opening project directory..."
 open .
+cd ..
+rm -- "$0"
