@@ -14,7 +14,7 @@ enum PlistKey {
     case timeoutInterval
     case connectionProtocol
     case info
-    
+
     func value() -> String {
         switch self {
         case .bundleId:
@@ -32,32 +32,30 @@ enum PlistKey {
 }
 
 struct Environment {
-    
-    fileprivate static var infoDict: [String: Any]  {
-        get {
-            if let dict = Bundle.main.infoDictionary {
-                return dict
-            }else {
-                fatalError("Plist file not found")
-            }
+
+    fileprivate static func infoDict() -> [String: Any] {
+        if let dict = Bundle.main.infoDictionary {
+            return dict
+        } else {
+            fatalError("Plist file not found")
         }
     }
-    
+
     fileprivate static func configuration(_ key: PlistKey) -> String {
         switch key {
         case .serverURL:
-            return infoDict[PlistKey.serverURL.value()] as! String
+            return infoDict()[PlistKey.serverURL.value()] as? String ?? ""
         case .timeoutInterval:
-            return infoDict[PlistKey.timeoutInterval.value()] as! String
+            return infoDict()[PlistKey.timeoutInterval.value()] as? String ?? ""
         case .connectionProtocol:
-            return infoDict[PlistKey.connectionProtocol.value()] as! String
+            return infoDict()[PlistKey.connectionProtocol.value()] as? String ?? ""
         case .info:
-            return infoDict[PlistKey.info.value()] as! String
+            return infoDict()[PlistKey.info.value()] as? String ?? ""
         case .bundleId:
-            return infoDict[PlistKey.bundleId.value()] as! String
+            return infoDict()[PlistKey.bundleId.value()] as? String ?? ""
         }
     }
-    
+
     public static func printEnv() {
         print("----------------------------")
         print("App Bundle Identifire: \(Environment.configuration(.bundleId))")
@@ -69,7 +67,9 @@ struct Environment {
 }
 
 extension Environment {
-    public static var serverURL: URL {
-        return URL(string: Environment.configuration(.connectionProtocol) + "://" + Environment.configuration(.serverURL))!
+    public static func serverURL() -> URL {
+        let prot = Environment.configuration(.connectionProtocol)
+        let url = Environment.configuration(.serverURL)
+        return URL(string: prot + "://" + url)!
     }
 }

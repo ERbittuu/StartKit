@@ -9,13 +9,13 @@
 import UIKit
 
 class LoginController: UIViewController {
-    
+
     @IBOutlet private var userField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction private func loginAction(_ sender: UIButton) {
         if let userName = userField.text,
             !userName.isEmpty {

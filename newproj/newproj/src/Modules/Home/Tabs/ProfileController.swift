@@ -9,13 +9,12 @@
 import UIKit
 
 class ProfileController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction private func logoutAction(_ sender: UIButton) {
         AppRouter.shared.logout()
     }
 }
-
