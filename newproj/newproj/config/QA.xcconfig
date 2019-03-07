@@ -7,7 +7,10 @@
 //
 
 //Server URLS and Other Configuration Keys
+bundle_id           = com.erbittuu.qa
+app_name            = qa-newproj
 info                = qa_build
 server_url          = www.qaenv.com
 timeout_interval    = 120
 protocol            = https
+icon_name           = AppIcon-QA

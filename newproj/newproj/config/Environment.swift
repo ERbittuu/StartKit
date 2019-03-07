@@ -9,6 +9,7 @@
 import Foundation
 
 enum PlistKey {
+    case bundleId
     case serverURL
     case timeoutInterval
     case connectionProtocol
@@ -16,6 +17,8 @@ enum PlistKey {
     
     func value() -> String {
         switch self {
+        case .bundleId:
+            return kCFBundleIdentifierKey as String
         case .serverURL:
             return "server_url"
         case .timeoutInterval:
@@ -50,11 +53,14 @@ struct Environment {
             return infoDict[PlistKey.connectionProtocol.value()] as! String
         case .info:
             return infoDict[PlistKey.info.value()] as! String
+        case .bundleId:
+            return infoDict[PlistKey.bundleId.value()] as! String
         }
     }
     
     public static func printEnv() {
         print("----------------------------")
+        print("App Bundle Identifire: \(Environment.configuration(.bundleId))")
         print("App Environment: \(Environment.configuration(PlistKey.info))")
         print("App Info: \(Environment.configuration(PlistKey.info))")
         print("Server URL: \(Environment.serverURL)")

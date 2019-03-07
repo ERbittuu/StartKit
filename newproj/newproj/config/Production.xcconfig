@@ -7,7 +7,10 @@
 //
 
 //Server URLS and Other Configuration Keys
+bundle_id           = com.erbittuu.production
+app_name            = newproj
 info                = production_build
 server_url          = www.productionenv.com
 timeout_interval    = 120
 protocol            = https
+icon_name           = AppIcon

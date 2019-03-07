@@ -6,12 +6,14 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconName</key>
+	<string>${icon_name}</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>${bundle_id}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>${app_name}</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -24,14 +26,6 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>server_url</key>
-	<string>${server_url}</string>
-	<key>protocol</key>
-	<string>${protocol}</string>
-	<key>timeout_interval</key>
-	<string>${timeout_interval}</string>
-	<key>info</key>
-	<string>$(info)</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -49,5 +43,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>info</key>
+	<string>$(info)</string>
+	<key>protocol</key>
+	<string>${protocol}</string>
+	<key>server_url</key>
+	<string>${server_url}</string>
+	<key>timeout_interval</key>
+	<string>${timeout_interval}</string>
 </dict>
 </plist>
