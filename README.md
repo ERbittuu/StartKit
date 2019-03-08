@@ -14,7 +14,6 @@ Features :
 
 ### Quick Start using ...
 
-----
 ## Version 1.0
 - Xcode Version 10.1 (10B61)
 - Swift Version 4.2
