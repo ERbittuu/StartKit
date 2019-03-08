@@ -20,7 +20,7 @@ Features :
 - Xcode Version 10.1 (10B61)
 - Swift Version 4.2
 
-`sh -c "$(curl -fsSL https://gist.githubusercontent.com/ERbittuu/99a2ce7bb7d74001525efd382a78876b/raw/f651847d2e4a6680cf5e0aad6af4247d19ae6385/StartKit.sh)"`
+`sh -c "$(curl -fsSL https://gist.githubusercontent.com/ERbittuu/99a2ce7bb7d74001525efd382a78876b/raw/8a234a9ed100845142c7eb04b8139f390b2dfdf2/StartKit.sh)"`
 
 ----
 
