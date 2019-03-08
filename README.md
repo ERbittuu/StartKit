@@ -1,14 +1,14 @@
 # This project is created from StartKit - SA project 
 
 Features :
-[x] : Different build configuration with environments (Production, Development, UAT, QA, Beta)
-[x] : Dynamic bundle id
-[x] : Dynamic icon files
-[x] : Config variable
-[x] : Objective-c bridging header
-[ ] : Basic app structure
-[ ] : User Default library
-[ ] : Logging library
+- [x] : Different build configuration with environments (Production, Development, UAT, QA, Beta)
+- [x] : Dynamic bundle id
+- [x] : Dynamic icon files
+- [x] : Config variable
+- [x] : Objective-c bridging header
+- [ ] : Basic app structure
+- [ ] : User Default library
+- [ ] : Logging library
 
 Quick Start using ...
 
@@ -20,4 +20,5 @@ Swift Version 4.2
 Happy coding...
 
 © erbittuu
+
 Created with ❤️ and Swift 😀
