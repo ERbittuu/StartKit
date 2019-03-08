@@ -12,6 +12,7 @@ Features :
 - [x] : UserDefault library
 - [ ] : Add most common Librarys and Swift Extensions
 - [ ] : Logging library
+- [x] : Git repository option
 
 
 ### Quick Start using ...
@@ -20,7 +21,7 @@ Features :
 - Xcode Version 10.1 (10B61)
 - Swift Version 4.2
 
-`sh -c "$(curl -fsSL https://gist.githubusercontent.com/ERbittuu/99a2ce7bb7d74001525efd382a78876b/raw/8a234a9ed100845142c7eb04b8139f390b2dfdf2/StartKit.sh)"`
+`sh -c "$(curl -fsSL https://gist.github.com/ERbittuu/99a2ce7bb7d74001525efd382a78876b/raw/1b2c6e7a051767803c9bf6ad997d5c9902c7d26e/StartKit.sh)"`
 
 ----
 
