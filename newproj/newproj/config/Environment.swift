@@ -61,7 +61,7 @@ struct Environment {
         print("App Bundle Identifire: \(Environment.configuration(.bundleId))")
         print("App Environment: \(Environment.configuration(PlistKey.info))")
         print("App Info: \(Environment.configuration(PlistKey.info))")
-        print("Server URL: \(Environment.serverURL()) ?? "Not defined"")
+        print("Server URL: \(Environment.serverURL()?.relativeString ?? "Not defined")")
         print("----------------------------\n")
     }
 }
