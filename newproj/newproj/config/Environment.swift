@@ -61,15 +61,15 @@ struct Environment {
         print("App Bundle Identifire: \(Environment.configuration(.bundleId))")
         print("App Environment: \(Environment.configuration(PlistKey.info))")
         print("App Info: \(Environment.configuration(PlistKey.info))")
-        print("Server URL: \(Environment.serverURL)")
+        print("Server URL: \(Environment.serverURL()) ?? "Not defined"")
         print("----------------------------\n")
     }
 }
 
 extension Environment {
-    public static func serverURL() -> URL {
+    public static func serverURL() -> URL? {
         let prot = Environment.configuration(.connectionProtocol)
         let url = Environment.configuration(.serverURL)
-        return URL(string: prot + "://" + url)!
+        return URL(string: prot + "://" + url)
     }
 }
