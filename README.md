@@ -1,4 +1,5 @@
-# This project is created from StartKit - SA project 
+# StartKit - iOS
+## This is template project - SA project 
 
 Features :
 - [x] : Different build configuration with environments (Production, Development, UAT, QA, Beta)
