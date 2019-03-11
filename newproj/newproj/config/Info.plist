@@ -45,11 +45,7 @@
 	</array>
 	<key>info</key>
 	<string>$(info)</string>
-	<key>protocol</key>
-	<string>${protocol}</string>
 	<key>server_url</key>
 	<string>${server_url}</string>
-	<key>timeout_interval</key>
-	<string>${timeout_interval}</string>
 </dict>
 </plist>
