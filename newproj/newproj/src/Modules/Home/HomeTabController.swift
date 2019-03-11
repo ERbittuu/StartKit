@@ -2,8 +2,8 @@
 //  HomeTabController.swift
 //  newproj
 //
-//  Created by Utsav Patel on 28/1/19.
-//  Copyright © 2019 Solution Analysts. All rights reserved.
+//  Created by CURRENTUSER on 28/1/19.
+//  Copyright © 2019 ORGNAME. All rights reserved.
 //
 
 import UIKit
