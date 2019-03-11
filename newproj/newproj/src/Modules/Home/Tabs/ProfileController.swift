@@ -2,8 +2,8 @@
 //  ProfileController.swift
 //  newproj
 //
-//  Created by Utsav Patel on 3/7/19.
-//  Copyright © 2019 Solution Analysts. All rights reserved.
+//  Created by CURRENTUSER on 3/7/19.
+//  Copyright © 2019 ORGNAME. All rights reserved.
 //
 
 import UIKit

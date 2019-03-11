@@ -1,9 +1,9 @@
 //
-//  EventCenter.m
-//  Itsycal
+//  MyClass.m
+//  newproj
 //
-//  Created by Sanjay Madan on 2/12/15.
-//  Copyright (c) 2015 mowglii.com. All rights reserved.
+//  Created by CURRENTUSER on 28/1/19.
+//  Copyright © 2019 ORGNAME. All rights reserved.
 //
 
 #import "MyClass.h"
