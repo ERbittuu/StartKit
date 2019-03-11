@@ -2,6 +2,7 @@
 ## This is template project - SA project 
 
 Features :
+- [x] : Create iOS swift project in terminal
 - [x] : Different build configuration with environments (Production, Development, UAT, QA, Beta)
 - [x] : Dynamic bundle id
 - [x] : Dynamic icon files
