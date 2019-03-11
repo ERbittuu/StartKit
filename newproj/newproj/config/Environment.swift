@@ -8,68 +8,54 @@
 
 import Foundation
 
-enum PlistKey {
-    case bundleId
-    case serverURL
-    case timeoutInterval
-    case connectionProtocol
-    case info
+struct Environment {
 
-    func value() -> String {
-        switch self {
-        case .bundleId:
-            return kCFBundleIdentifierKey as String
-        case .serverURL:
-            return "server_url"
-        case .timeoutInterval:
-            return "timeout_interval"
-        case .connectionProtocol:
-            return "protocol"
-        case .info:
-            return "info"
+    fileprivate enum PlistKey: String {
+        case bundleId = "CFBundleIdentifier"
+        case serverURL = "server_url"
+        case info
+    }
+
+    static var bundleId: String {
+        return Configuration.stringForKey(key: PlistKey.bundleId.rawValue)
+    }
+
+    static var info: String {
+        return Configuration.stringForKey(key: PlistKey.info.rawValue)
+    }
+
+    static var serverURL: URL {
+        if let url = URL(string: "https://" + Configuration.stringForKey(key: PlistKey.serverURL.rawValue)) {
+            return url
+        } else {
+            fatalError("Something want wrong while creating url")
         }
+    }
+
+    static func printEnv() {
+        print("----------------------------")
+        print("App Info: \(info)")
+        print("Bundle Identifire: \(bundleId)")
+        print("Server URL: \(Environment.serverURL)")
+        print("----------------------------\n")
     }
 }
 
-struct Environment {
+private struct Configuration {
 
-    fileprivate static func infoDict() -> [String: Any] {
+    static func stringForKey(key: String) -> String {
+        if let value = infoDict[key] as? String {
+            return value
+        } else {
+            fatalError("\(key) not available")
+        }
+    }
+
+    private static var infoDict: [String: Any] {
         if let dict = Bundle.main.infoDictionary {
             return dict
         } else {
             fatalError("Plist file not found")
         }
-    }
-
-    fileprivate static func configuration(_ key: PlistKey) -> String {
-        switch key {
-        case .serverURL:
-            return infoDict()[PlistKey.serverURL.value()] as? String ?? ""
-        case .timeoutInterval:
-            return infoDict()[PlistKey.timeoutInterval.value()] as? String ?? ""
-        case .connectionProtocol:
-            return infoDict()[PlistKey.connectionProtocol.value()] as? String ?? ""
-        case .info:
-            return infoDict()[PlistKey.info.value()] as? String ?? ""
-        case .bundleId:
-            return infoDict()[PlistKey.bundleId.value()] as? String ?? ""
-        }
-    }
-
-    public static func printEnv() {
-        print("----------------------------")
-        print("App Bundle Identifire: \(Environment.configuration(.bundleId))")
-        print("App Environment: \(Environment.configuration(PlistKey.info))")
-        print("App Info: \(Environment.configuration(PlistKey.info))")
-        print("Server URL: \(Environment.serverURL()?.relativeString ?? "Not defined")")
-        print("----------------------------\n")
-    }
-}
-
-extension Environment {
-    public static func serverURL() -> URL? {
-        let prot = Environment.configuration(.connectionProtocol)
-        let url = Environment.configuration(.serverURL)
-        return URL(string: prot + "://" + url)
     }
 }

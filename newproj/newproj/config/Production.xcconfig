@@ -9,7 +9,7 @@
 //Server URLS and Other Configuration Keys
 // App config
 bundle_id           = com.erbittuu.production
-app_name            = instaLove
+app_name            = newproj
 icon_name           = AppIcon
 
 // App info
@@ -17,8 +17,6 @@ info                = production_build
 
 // env config
 server_url          = www.productionenv.com
-timeout_interval    = 120
-protocol            = https
 
 
 // You can add more env config Keys here and don't forget to add same in info plist

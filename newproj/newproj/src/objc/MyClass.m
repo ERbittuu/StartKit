@@ -11,7 +11,7 @@
 @implementation MyClass
 
 - (void)test {
-    NSLog(@"New test NSLog function from Objective C");
+    NSLog(@"New test NSLog function from Objective C class file");
 }
     
 @end

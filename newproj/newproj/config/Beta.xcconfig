@@ -9,7 +9,7 @@
 //Server URLS and Other Configuration Keys
 // App config
 bundle_id           = com.erbittuu.beta
-app_name            = beta-instaLove
+app_name            = beta-newproj
 icon_name           = AppIcon-QA
 
 // App info
@@ -17,8 +17,6 @@ info                = beta_build
 
 // env config
 server_url          = www.betaenv.com
-timeout_interval    = 120
-protocol            = https
 
 
 // You can add more env config Keys here and don't forget to add same in info plist

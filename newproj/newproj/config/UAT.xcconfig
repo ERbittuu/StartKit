@@ -9,7 +9,7 @@
 //Server URLS and Other Configuration Keys
 // App config
 bundle_id           = com.erbittuu.uat
-app_name            = uat-instaLove
+app_name            = uat-newproj
 icon_name           = AppIcon-QA
 
 // App info
@@ -17,8 +17,6 @@ info                = uat_build
 
 // env config
 server_url          = www.uatenv.com
-timeout_interval    = 120
-protocol            = https
 
 
 // You can add more env config Keys here and don't forget to add same in info plist

@@ -17,9 +17,12 @@ class LoginController: UIViewController {
     }
 
     @IBAction private func loginAction(_ sender: UIButton) {
+
         if let userName = userField.text,
             !userName.isEmpty {
-            AppRouter.shared.login(for: userName)
+            AlertController.alert("Hello", message: "Success", acceptMessage: "Home") {
+                AppRouter.shared.login(for: userName)
+            }
         }
     }
 }

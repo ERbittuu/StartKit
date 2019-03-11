@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3CAA5122363D63004DA4BB /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CAA5022363D63004DA4BB /* AlertController.swift */; };
 		2DBD848A2231008900A5B3A2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD84892231008900A5B3A2 /* AppRouter.swift */; };
 		2DBD848C2231179D00A5B3A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD848B2231179D00A5B3A2 /* LoginController.swift */; };
 		2DBD849122311A7600A5B3A2 /* UIStoryboard+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBD849022311A7600A5B3A2 /* UIStoryboard+UIViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D3CAA5022363D63004DA4BB /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		2DBD84892231008900A5B3A2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		2DBD848B2231179D00A5B3A2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2DBD849022311A7600A5B3A2 /* UIStoryboard+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+UIViewController.swift"; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				2DBD84A422313B2800A5B3A2 /* objc */,
-				2DBD84982231312700A5B3A2 /* Defaults */,
+				2D3CAA4E22363D40004DA4BB /* Helpers */,
 				2DBD848F22311A6800A5B3A2 /* Extentions */,
 				2D3838612200453B00886A76 /* Storyboards */,
 				6AF8D0111FBF631C00C18FD1 /* AppDelegate.swift */,
@@ -105,6 +107,23 @@
 				6AF8D01A1FBF631D00C18FD1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2D3CAA4E22363D40004DA4BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2D3CAA4F22363D4F004DA4BB /* Alerts */,
+				2DBD84982231312700A5B3A2 /* Defaults */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2D3CAA4F22363D4F004DA4BB /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				2D3CAA5022363D63004DA4BB /* AlertController.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		2DBD84862231004F00A5B3A2 /* Home */ = {
@@ -299,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3CAA5122363D63004DA4BB /* AlertController.swift in Sources */,
 				2DBD84932231221500A5B3A2 /* UIWindow.swift in Sources */,
 				2DBD848A2231008900A5B3A2 /* AppRouter.swift in Sources */,
 				6AF8D0141FBF631C00C18FD1 /* HomeTabController.swift in Sources */,

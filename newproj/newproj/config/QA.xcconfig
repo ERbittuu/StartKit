@@ -9,7 +9,7 @@
 //Server URLS and Other Configuration Keys
 // App config
 bundle_id           = com.erbittuu.qa
-app_name            = qa-instaLove
+app_name            = qa-newproj
 icon_name           = AppIcon-QA
 
 // App info
@@ -17,8 +17,6 @@ info                = qa_build
 
 // env config
 server_url          = www.qaenv.com
-timeout_interval    = 120
-protocol            = https
 
 
 // You can add more env config Keys here and don't forget to add same in info plist
