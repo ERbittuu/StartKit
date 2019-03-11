@@ -1,16 +1,24 @@
 //
 //  UAT.xcconfig
-//  newproj
+//  instaLove
 //
-//  Created by CURRENTUSER on 28/1/19.
-//  Copyright © 2019 ORGNAME. All rights reserved.
+//  Created by Utsav Patel on 28/1/19.
+//  Copyright © 2019 facebook. All rights reserved.
 //
 
 //Server URLS and Other Configuration Keys
+// App config
 bundle_id           = com.erbittuu.uat
-app_name            = uat-newproj
+app_name            = uat-instaLove
+icon_name           = AppIcon-QA
+
+// App info
 info                = uat_build
+
+// env config
 server_url          = www.uatenv.com
 timeout_interval    = 120
 protocol            = https
-icon_name           = AppIcon-QA
+
+
+// You can add more env config Keys here and don't forget to add same in info plist
