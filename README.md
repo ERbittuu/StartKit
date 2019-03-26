@@ -16,7 +16,12 @@ Features :
 - [x] : Git repository option
 
 
-### Quick Start using ...
+### Always Quick Start Using Mac `Terminal` App...
+
+1. Open Terminal app
+2. Change directory using cd ~/dev/awesomeProjects/
+3. Copy Script from below list(Best as per your usage) and past in terminal 
+4. Follow instruction and start coding in Xcode.
 
 ## Version 1.0
 - Xcode Version 10.1 (10B61)
